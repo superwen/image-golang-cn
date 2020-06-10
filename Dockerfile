@@ -5,6 +5,6 @@ COPY . .
 
 RUN go env -w GOPROXY=https://goproxy.cn,direct
 RUN go get -d -v ./...
-RUN go install -v ./... -o app
+RUN go install -v ./...
 
 CMD ["app"]
